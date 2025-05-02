@@ -11,3 +11,14 @@ watchPaths = [
   "apps/frontend/**",
   "packages/ui/**"
 ]
+
+
+# --- Frontend Service Definition ---
+[[services]]
+name = "frontend" # Optional, but helpful identifier
+rootDir = "apps/frontend" 
+healthcheckPath = "/"
+
+[[services]]
+name = "backend" # Optional, but helpful identifier
+rootDir = "apps/backend"
