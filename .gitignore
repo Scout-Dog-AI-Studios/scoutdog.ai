@@ -1,0 +1,69 @@
+# Root .gitignore for monorepo
+
+# -----------------------
+# JavaScript / TypeScript
+# -----------------------
+**/node_modules/
+.pnpm/
+.yarn/
+
+# Turborepo cache
+.turbo/
+
+# Next.js build & cache
+.next/
+.out/
+
+# General build output
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# -----------------------
+# Python
+# -----------------------
+*.pyc
+__pycache__/
+.poetry/
+
+# -----------------------
+# Logs
+# -----------------------
+*.log
+
+# -----------------------
+# Coverage
+# -----------------------
+coverage/
+
+# -----------------------
+# Environment variables
+# -----------------------
+.env
+.env.local
+.env.*
+!.env.example
+
+# -----------------------
+# Deployment
+# -----------------------
+.vercel/
+.netlify/
+
+# -----------------------
+# Misc / OS
+# -----------------------
+.DS_Store
+*.pem
+
+# -----------------------
+# IDE / Editor
+# -----------------------
+.idea/
+.vscode/
+*.swp
+ 
+ **/mockup/
+ *.rsls
+ 

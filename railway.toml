@@ -1,0 +1,13 @@
+[build]
+builder = "nixpacks"
+
+[build.env]
+PNPM_VERSION = "10.9.0"   # Corepack activates this
+
+[deploy]
+startCommand  = "pnpm --filter ./apps/frontend --workspace-root run start"
+healthcheckPath = "/"
+watchPaths = [
+  "apps/frontend/**",
+  "packages/ui/**"
+]

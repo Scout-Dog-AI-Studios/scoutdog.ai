@@ -1,0 +1,37 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "tasks": {
+    "build": {
+      "outputs": [
+        "apps/frontend/.next/**",
+        "!.next/cache/**",
+        "apps/backend/dist/**"
+      ],
+      "dependsOn": ["^build"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "outputs": []
+    },
+    "typecheck": {
+      "outputs": ["apps/frontend/tsconfig.tsbuildinfo"]
+    },
+    "test": {
+      "dependsOn": ["^build", "install"],
+      "outputs": [
+        "apps/frontend/coverage/**",
+        "apps/backend/coverage.xml",
+        "apps/backend/.pytest_cache/**"
+      ]
+    },
+    "clean": {
+      "cache": false
+    },
+    "format": {
+      "cache": false
+    }
+  }
+}

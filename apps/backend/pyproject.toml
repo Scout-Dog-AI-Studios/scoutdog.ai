@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "backend"
+package-mode = false
+version = "0.1.0"
+description = ""
+authors = ["Patrick McFadin <pmcfadin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.12"
+uvicorn = {extras = ["standard"], version = "^0.34.2"}
+pydantic = "^2.11.3"
+pydantic-settings = "^2.9.1"
+python-dotenv = "^1.1.0"
+httpx = "^0.28.1"
+python-jose = {extras = ["cryptography"], version = "^3.4.0"}
+cassandra-driver = "^3.29.2"
+boto3 = "^1.38.2"
+python-multipart = "^0.0.20"
+
+[tool.poetry.scripts]
+dev = "uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.7"
+black = "^25.1.0"
+mypy = "^1.15.0"
+pytest = "^8.3.5"
+pytest-asyncio = "^0.26.0"
+httpx = "^0.28.1"
+types-python-jose = "^3.4.0.20250224"
+boto3-stubs = "^1.38.2"
+types-requests = "^2.32.0.20250328"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
