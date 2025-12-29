@@ -1,9 +1,0 @@
-[build]
-builder = "dockerfile"
-
-[deploy]
-healthcheckPath   = "/"
-healthcheckTimeout = 300
-restartPolicyType  = "ON_FAILURE"     # ← all-caps, underscore removed
-restartPolicyMaxRetries = 5 
-watchPaths = ["apps/backend/**"]

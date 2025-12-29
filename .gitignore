@@ -1,69 +1,25 @@
-# Root .gitignore for monorepo
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
-# -----------------------
-# JavaScript / TypeScript
-# -----------------------
-**/node_modules/
-.pnpm/
-.yarn/
+# Ruby dependencies
+Gemfile.lock
+.bundle/
+vendor/
 
-# Turborepo cache
-.turbo/
-
-# Next.js build & cache
-.next/
-.out/
-
-# General build output
-build/
-dist/
-*.tsbuildinfo
-next-env.d.ts
-
-# -----------------------
-# Python
-# -----------------------
-*.pyc
-__pycache__/
-.poetry/
-
-# -----------------------
-# Logs
-# -----------------------
-*.log
-
-# -----------------------
-# Coverage
-# -----------------------
-coverage/
-
-# -----------------------
-# Environment variables
-# -----------------------
-.env
-.env.local
-.env.*
-!.env.example
-
-# -----------------------
-# Deployment
-# -----------------------
-.vercel/
-.netlify/
-
-# -----------------------
-# Misc / OS
-# -----------------------
+# OS files
 .DS_Store
-*.pem
 
-# -----------------------
 # IDE / Editor
-# -----------------------
 .idea/
 .vscode/
 *.swp
- 
- **/mockup/
- *.rsls
- 
+
+# Environment
+.env
+.env.local
+
+# Claude Code
+.claude/

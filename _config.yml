@@ -1,0 +1,16 @@
+title: Scout Dog AI Studios LLC
+description: Building useful apps for web and mobile
+url: https://scoutdog.ai
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .claude/
