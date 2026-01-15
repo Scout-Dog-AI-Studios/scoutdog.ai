@@ -5,6 +5,7 @@ baseurl: ""
 
 # Build settings
 markdown: kramdown
+theme: null
 plugins:
   - jekyll-seo-tag
 
