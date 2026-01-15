@@ -20,7 +20,7 @@
   --font-main: 'Inter', system-ui, -apple-system, sans-serif;
 
   /* Spacing */
-  --section-spacing: 80px;
+  --section-spacing: 48px;
   --radius: 12px;
   --radius-sm: 8px;
 
@@ -30,7 +30,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 72px;
 }
 
 body {
@@ -118,7 +118,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 24px;
+  padding: 40px 24px;
 }
 
 /* Hero Section */
